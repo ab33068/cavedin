@@ -1,0 +1,36 @@
+@font-face 
+{ 
+	font-family: Rocko; 
+	src: url('rocko.ttf'); 
+}
+ 
+@keyframes TitleAnimation 
+{
+	from 
+	{
+		margin-top: -40%;
+	}
+	to 
+	{
+		margin-top: 6%;
+	}
+}
+
+body
+{
+	background-image: url("Images/Wall.png"); 
+	background-size: 100%;
+	background-repeat: no-repeat;
+    image-rendering: -moz-crisp-edges;          
+	image-rendering: pixelated;
+}
+
+h1
+{
+	font-size: 700%;
+	color: white;
+	font-family: Rocko;
+	animation-duration: 0.5s;
+	animation-name: TitleAnimation;
+}
+
