@@ -6,38 +6,109 @@
 
 @-webkit-keyframes moveDown
 { 
-	from 
+	0% 
 	{ 
 		margin-top: -15%;
 	} 
-	to 
+	100% 
 	{ 
 		margin-top: 5%;
 	} 
 }
 @-moz-keyframes moveDown
 { 
-	from 
+	0%
 	{ 
 		margin-top: -15%;
 	} 
-	to 
+	100%
 	{ 
 		margin-top: 5%;
 	} 
 }
 @keyframes moveDown
 { 
-	from 
+	0%
 	{ 
 		margin-top: -15%;
 	} 
-	to 
+	100%
 	{ 
 		margin-top: 5%;
 	} 
 }
-  
+
+@-webkit-keyframes fadeIn 
+{ 
+	from 
+	{ 
+		opacity:0; 
+		opacity: 1\9;  
+	} 
+	to 
+	{ 
+		opacity:1; 
+	} 
+}
+@-moz-keyframes fadeIn 
+{ 
+	from 
+	{ 
+		opacity:0; 
+		opacity: 1\9;
+	} 
+	to 
+	{ 
+		opacity:1; 
+	} 
+}
+@keyframes fadeIn 
+{ 
+	from 
+	{ 
+		opacity:0; 
+		opacity: 1\9; 
+	} 
+	to 
+	{ 
+		opacity:1; 
+	} 
+}
+
+@-webkit-keyframes changeToRed 
+{ 
+	from 
+	{ 
+		color: white;
+	} 
+	to 
+	{ 
+		color: red;
+	} 
+}
+@-moz-keyframes changeToRed
+{ 
+	from 
+	{ 
+		color: white;
+	} 
+	to 
+	{ 
+		color: red;
+	} 
+}
+@keyframes changeToRed
+{ 
+	from 
+	{ 
+		color: white;
+	} 
+	to 
+	{ 
+		color: red; 
+	} 
+}
+
 .moveDown
 {
     -webkit-animation:moveDown linear 1;  
@@ -53,44 +124,6 @@
     animation-duration:0.5s;
 }
 
-@-webkit-keyframes fadeIn 
-{ 
-	from 
-	{ 
-		opacity:0; 
-		opacity: 1\9;  
-	} 
-	to 
-	{ 
-		opacity:1; 
-	} 
-}
-
-@-moz-keyframes fadeIn 
-	{ 
-		from 
-		{ 
-			opacity:0; 
-			opacity: 1\9;
-		} 
-		to 
-		{ 
-			opacity:1; 
-		} 
-}
-@keyframes fadeIn 
-	{ 
-		from 
-		{ 
-			opacity:0; 
-			opacity: 1\9; 
-		} 
-		to 
-		{ 
-			opacity:1; 
-		} 
-}
-
 .fade-in 
 {
     opacity:0;  
@@ -98,9 +131,9 @@
     -moz-animation:fadeIn ease-in 1;
     animation:fadeIn ease-in 1;
 	
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	animation-delay: 1s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
 
     -webkit-animation-fill-mode:forwards;  
     -moz-animation-fill-mode:forwards;
@@ -129,6 +162,7 @@ body
 
 p
 {
+	margin-left: 5%;
 	font-size: 200%;
 	color: white;
 	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
@@ -155,5 +189,12 @@ a:visited
 
 a:hover
 {
-	color: red;
+	color: red; 
+    -webkit-animation:changeToRed ease-in-out 1;  
+    -moz-animation:changeToRed ease-in-out 1;
+    animation:changeToRed ease-in-out 1;
+
+    -webkit-animation-duration:0.5s;
+    -moz-animation-duration:0.5s;
+    animation-duration:0.5s;
 }
