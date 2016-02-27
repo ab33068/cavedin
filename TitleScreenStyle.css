@@ -3,17 +3,119 @@
 	font-family: Rocko; 
 	src: url('rocko.ttf'); 
 }
- 
-@keyframes TitleAnimation 
-{
+
+@-webkit-keyframes moveDown
+{ 
 	from 
-	{
-		margin-top: -40%;
-	}
+	{ 
+		margin-top: -15%;
+	} 
 	to 
-	{
-		margin-top: 6%;
-	}
+	{ 
+		margin-top: 5%;
+	} 
+}
+@-moz-keyframes moveDown
+{ 
+	from 
+	{ 
+		margin-top: -15%;
+	} 
+	to 
+	{ 
+		margin-top: 5%;
+	} 
+}
+@keyframes moveDown
+{ 
+	from 
+	{ 
+		margin-top: -15%;
+	} 
+	to 
+	{ 
+		margin-top: 5%;
+	} 
+}
+  
+.moveDown
+{
+    -webkit-animation:moveDown linear 1;  
+    -moz-animation:moveDown linear 1;
+    animation:moveDown linear 1;
+
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.5s;
+    -moz-animation-duration:0.5s;
+    animation-duration:0.5s;
+}
+
+@-webkit-keyframes fadeIn 
+{ 
+	from 
+	{ 
+		opacity:0; 
+		opacity: 1\9;  
+	} 
+	to 
+	{ 
+		opacity:1; 
+	} 
+}
+
+@-moz-keyframes fadeIn 
+	{ 
+		from 
+		{ 
+			opacity:0; 
+			opacity: 1\9;
+		} 
+		to 
+		{ 
+			opacity:1; 
+		} 
+}
+@keyframes fadeIn 
+	{ 
+		from 
+		{ 
+			opacity:0; 
+			opacity: 1\9; 
+		} 
+		to 
+		{ 
+			opacity:1; 
+		} 
+}
+
+.fade-in 
+{
+    opacity:0;  
+    -webkit-animation:fadeIn ease-in 1;  
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+	
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+h1
+{
+	font-size: 700%;
+	color: white;
+	font-family: Rocko;
 }
 
 body
@@ -25,16 +127,7 @@ body
 	image-rendering: pixelated;
 }
 
-h1
-{
-	font-size: 700%;
-	color: white;
-	font-family: Rocko;
-	animation-duration: 0.5s;
-	animation-name: TitleAnimation;
-}
-
-P
+p
 {
 	font-size: 200%;
 	color: white;
@@ -44,8 +137,23 @@ P
 h2
 {
 	font-size: 400%;
-	color: white;
 	font-family: Rocko;
-	animation-duration: 0.5s;
-	animation-name: TitleAnimation;
+}
+
+a:link
+{
+	color: white;
+	text-decoration: none;
+	-moz-outline: none;
+	outline: none;
+}
+
+a:visited
+{
+	color: white;
+}
+
+a:hover
+{
+	color: red;
 }
