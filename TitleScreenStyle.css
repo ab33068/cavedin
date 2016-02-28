@@ -158,7 +158,7 @@ body
 	background-repeat: no-repeat;
     image-rendering: -moz-crisp-edges;          
 	image-rendering: pixelated;
-	image-rendering: auto;
+	image-rendering: -webkit-optimize-contrast;
 }
 
 p
