@@ -154,7 +154,7 @@ h1
 body
 {
 	background-image: url("Images/Wall.png"); 
-	background-size: 1250px 1700px;
+	background-size: 200%;
 	background-repeat: no-repeat;
     image-rendering: -moz-crisp-edges;          
 	image-rendering: pixelated;
