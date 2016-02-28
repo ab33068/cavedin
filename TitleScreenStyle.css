@@ -131,9 +131,9 @@
     -moz-animation:fadeIn ease-in 1;
     animation:fadeIn ease-in 1;
 	
-	-webkit-animation-delay: 0.5s;
-	-moz-animation-delay: 0.5s;
-	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s;
 
     -webkit-animation-fill-mode:forwards;  
     -moz-animation-fill-mode:forwards;
@@ -154,7 +154,7 @@ h1
 body
 {
 	background-image: url("Images/Wall.png"); 
-	background-size: 100%;
+	background-size: 1250px 1700px;
 	background-repeat: no-repeat;
     image-rendering: -moz-crisp-edges;          
 	image-rendering: pixelated;
@@ -162,7 +162,6 @@ body
 
 p
 {
-	margin-left: 5%;
 	font-size: 200%;
 	color: white;
 	font-family: Arial Black,Arial Bold,Gadget,sans-serif;
